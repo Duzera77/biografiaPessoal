@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Contato</title>
-</head>
-<body>
-    <h1>Meus Contatos</h1>
-    <p>Endereço: Rua Professora Adélia A. Martins, 379 Bairro Pq. Selecta </p>
-    <p> Cel: (11)9.8471-1941</p>
-    <p>E-mail: dupearljam@gmail.com</p>
-   
-   <form action="mailto:dupearljam@gmail.com" method="POST" enctype="text/plain">
-       <label for="">Nome Completo</label> <br />
-       <input type="text" name="Nome" /> <br /> 
-       <br />
-       <label for="">E-mail</label> <br />
-       <input type="email" name="email" /> <br /> 
-       <br />
-       <label for="">Sua Mensagem</label> <br />
-       <textarea name="mensagem" cols="30" rows="10"></textarea> <br /> 
-       <br />
-       <input type="submit" /> <br />
 
-   </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <style>
+            body{
+                padding-top: 10px;
+                background-color: darkseagreen;
+            }
+        </style>
+        <title>Contato</title>
+    </head>
+
+    <body class='container'>
+        <header class='jumbotron'>
+            <h3>Meus Contatos</h3>
+            <p>Endereço: Rua Professora Adélia A. Martins, 379 -- Bairro: Pq. Selecta -- SBC / SP </p>
+            <tbody>
+                <tr>
+                    <td>E-mail: dupearljam@gmail.com</td>
+                    <td>   /    Cel: (11)9.8471-1941</td>
+                </tr>
+            </tbody>
+        </header>
+        
+        <main>
+            <form action="mailto:dupearljam@gmail.com" method="POST" enctype="text/plain">
+                <label for="">Nome Completo</label> <br />
+                <input type="text" name="Nome" /> <br /> 
+                <label for="">E-mail</label> <br />
+                <input type="email" name="email" /> <br /> 
+                <label for="">Sua Mensagem</label> <br />
+                <textarea name="mensagem" cols="75" rows="8"></textarea> <br /> 
+                <input class="btn btn-primary" type="submit" /> <br />
+            </form>
+        </main>
+        <footer>
+            <p class='text-center text-muted' >👀O melhor ainda está por vir.✔</p>
+        </footer>
+    </body>
 </html>
